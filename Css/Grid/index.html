@@ -1,0 +1,100 @@
+<!-- 
+Grid Container:
+    -display: grid;
+    -grid-template-columns;   
+    -grid-template-rows;  
+    -grid-template-areas;
+    -justify-content;
+    -align-content; 
+    -place-content;
+    -justify-items;
+    -align-items;    
+    -place-items;
+    -gap;
+
+Grid Items:
+    -grid-column-start/end;
+    -grid-row-start/end;
+    -grid-column;
+    -grid-row;
+    -grid-area;
+    -justify-self;
+    -align-self;
+    -place-self;        
+-->
+<!-- 
+    We use parent and child properties to create a layout
+ -->
+<!-- 
+ grid-row-start-2
+ grid-row-end-5
+ grid-row-2/5
+  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent{
+            display: grid;
+            /* grid-template-columns: 200px 200px 200px; */
+            /* grid-template-columns: repeat(3,300px); */
+            /* grid-template-columns: 100px 200px 1fr; */
+            /* grid-template-columns: 1fr 1fr 1fr; */
+            grid-template-columns: repeat(3, 1fr);
+            gap:5px;
+            height:100vh;
+        }
+        .item1{
+            background-color: orange;
+            font-size: 3rem;
+            grid-row-start:1;
+            grid-row-end:3;
+
+        }
+        .item2{
+            background-color: blue;
+            font-size: 3rem;
+            grid-row:1/3;
+        }
+        .item3{
+            background-color: red;
+            font-size: 3rem;
+        }
+        .item4{
+            background-color:yellow;
+            font-size: 3rem;
+            grid-column-start: 2;
+            grid-column-end: 4;
+        }
+        .item5{
+            background-color: purple;
+            font-size: 3rem;
+        }
+        .item6{
+            background-color: green;
+            font-size: 3rem;
+            grid-column: 2/4;
+        }
+        .item7{
+            background-color: goldenrod;
+            font-size: 3rem;
+            grid-column:1/4;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="item1">item-1</div>
+        <div class="item2">item-2</div>
+        <div class="item3">item-3</div>
+        <div class="item4">item-4</div>
+        <div class="item5">item-5</div>
+        <div class="item6">item-6</div>
+        <div class="item7">item-7</div>
+    </div>
+</body>
+</html>
