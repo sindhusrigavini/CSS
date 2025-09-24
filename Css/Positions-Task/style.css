@@ -1,0 +1,13 @@
+p{
+    position: absolute;
+    color:black;
+    top: 270px;
+    left:10px;
+    text-decoration-thickness: 20px;
+}
+img{
+    position: relative;
+    height: 300px;
+    width: 300px;
+
+}

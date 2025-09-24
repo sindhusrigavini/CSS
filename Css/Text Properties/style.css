@@ -1,0 +1,15 @@
+h1{
+    text-decoration: underline;
+    text-decoration-color: red;
+    text-decoration-thickness: 10px;
+    letter-spacing: 25px;
+
+}
+h2{
+    text-decoration:overline;
+    word-spacing: 25px;
+    line-height: 100px;
+}
+h3{
+    text-decoration: line-through;
+}

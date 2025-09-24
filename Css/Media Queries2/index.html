@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        nav>ol>li{
+            list-style-type: none;
+        }
+        @media screen and (min-width: 320px) and (max-width: 425px){
+        nav>ol{
+            display:flex;
+            flex-direction: column;
+            /* justify-content: space-between; */
+        }
+    }
+         @media screen and (min-width: 425px) and (max-width:768px){
+          nav>ol{
+                display:flex;
+                justify-content: space-between;
+            }
+    }
+    </style>
+</head>
+<body>
+    <nav>
+        <ol>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+            <li>Sign in</li>
+        </ol>
+    </nav>
+</body>
+</html>

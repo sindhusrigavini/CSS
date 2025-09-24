@@ -1,0 +1,43 @@
+img{
+    width: 300px;
+    height: 300px;
+    
+}
+
+
+   /* constant */
+/* .img1{
+    position:static;
+} */
+
+
+/* Moves from its original place but, no image occupies its original place */
+/* .img2{
+    position:relative;
+    top:500px;
+    left:200px;
+} */
+
+
+/* Another image occupies its place when image 3 moves */
+/* .img3{
+    position:absolute;
+    top:200px;
+    right:100px;
+} */
+
+
+/* Constant but,Stays at the same place even when we scroll */
+.img4{
+    position:fixed;
+    top:300px;
+    left:600px;
+}
+
+
+   /* Stays at the same place until we scroll to a certain point */
+.img5{
+    position:sticky;
+    top:400px;
+    left:800px;
+}

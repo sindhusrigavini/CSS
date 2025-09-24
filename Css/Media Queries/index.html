@@ -1,0 +1,49 @@
+<!-- 
+ Mobile small-320px,
+ Mobile medium-375px,
+ Mobile large-425px,        
+    Tablet-768px,   
+    Laptop-1024px,
+    Laptop large-1440px,        
+    Desktop-2560px      
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            background-color: lightskyblue;
+        }
+        @media screen and (min-width: 320px) and (max-width: 420px){
+            h1{
+                background-color: lightcoral;
+                /* Applies form 320px to 420px */
+            }
+            p{
+                background-color: lightseagreen;
+            }
+        }
+        @media screen and (max-width: 768px){
+            h1{
+                background-color: lightgreen;
+                /* Applies form start of screen to 768px */
+            }
+            p{
+                background-color: greenyellow;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Media Queries Concept</h1>
+
+    </div>
+    <p>Learn Something</p>
+</body>
+</html>
