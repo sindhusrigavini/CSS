@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent>div{
+            background-color: violet;
+            color:white;
+        }
+        
+        
+        .parent{
+            /*Display flex should be used only in parent not child */
+            display:flex; 
+            gap:5px;
+            /* flex-direction:column;    */
+            /* row | column | row-reverse | column-reverse */
+            /* Flex direction by default it is row */
+
+
+            /* flex-wrap:wrap; */
+            /* nowrap | wrap | wrap-reverse */
+            
+
+            /* flex-flow: flex-dirextion flex-wrap */
+            /* flex-flow:row wrap; */
+
+            /* Justify content default value is start appears top left  */
+            /* === */
+            /* justify-content:start; */
+            /* justify-content:end; */
+            /* justify-content:center; */
+            /* === */
+            /* justify-content: space-between; */
+            /* Space between items */
+            /* === */
+            /* justify-content: space-evenly; */
+            /* Two sides same space should occupy */
+            /* === */
+            /* justify-content: space-around; */
+            /* Same space occupies before and after item */
+            /* === */
+            /* Types start,end,center,space-evenly,space-between,space-around */
+
+            height:100vh;
+            /* Height is mandatory to use align items */
+            /* Default value of align items is stretch */
+            /* align-items:center; */
+            /* align-items: stretch; */
+            /* align-items: start; */
+            align-items: end;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div>item1</div>
+        <div>item2</div>
+        <div>item3</div>
+        <div>item4</div>
+        <div>item5</div>
+        <div>item6</div>
+    </div>
+</body>
+</html>
